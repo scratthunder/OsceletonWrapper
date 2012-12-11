@@ -13,7 +13,29 @@
 		27E60A2C16773125000FD563 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27E60A2A16773125000FD563 /* Credits.rtf */; };
 		27E60A2F16773125000FD563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E60A2E16773125000FD563 /* AppDelegate.m */; };
 		27E60A3216773125000FD563 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E60A3016773125000FD563 /* MainMenu.xib */; };
+		27E60A3D167731F3000FD563 /* osceleton in Resources */ = {isa = PBXBuildFile; fileRef = 27E60A3C167731F3000FD563 /* osceleton */; };
+		27E60A421677326D000FD563 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E60A3F1677326D000FD563 /* VVBasics.framework */; };
+		27E60A431677326D000FD563 /* VVMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E60A401677326D000FD563 /* VVMIDI.framework */; };
+		27E60A441677326D000FD563 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E60A411677326D000FD563 /* VVOSC.framework */; };
+		27E60A4A16773297000FD563 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E60A3F1677326D000FD563 /* VVBasics.framework */; };
+		27E60A4B16773297000FD563 /* VVMIDI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E60A401677326D000FD563 /* VVMIDI.framework */; };
+		27E60A4C16773297000FD563 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E60A411677326D000FD563 /* VVOSC.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27E60A491677328E000FD563 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27E60A4A16773297000FD563 /* VVBasics.framework in CopyFiles */,
+				27E60A4B16773297000FD563 /* VVMIDI.framework in CopyFiles */,
+				27E60A4C16773297000FD563 /* VVOSC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27E60A1716773125000FD563 /* OsceletonWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OsceletonWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +51,10 @@
 		27E60A2D16773125000FD563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27E60A2E16773125000FD563 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27E60A3116773125000FD563 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27E60A3C167731F3000FD563 /* osceleton */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = osceleton; sourceTree = "<group>"; };
+		27E60A3F1677326D000FD563 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVBasics.framework; sourceTree = "<group>"; };
+		27E60A401677326D000FD563 /* VVMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVMIDI.framework; sourceTree = "<group>"; };
+		27E60A411677326D000FD563 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVOSC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +63,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E60A1C16773125000FD563 /* Cocoa.framework in Frameworks */,
+				27E60A421677326D000FD563 /* VVBasics.framework in Frameworks */,
+				27E60A431677326D000FD563 /* VVMIDI.framework in Frameworks */,
+				27E60A441677326D000FD563 /* VVOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +111,7 @@
 		27E60A2116773125000FD563 /* OsceletonWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				27E60A3E1677326D000FD563 /* External Frameworks */,
 				27E60A2D16773125000FD563 /* AppDelegate.h */,
 				27E60A2E16773125000FD563 /* AppDelegate.m */,
 				27E60A3016773125000FD563 /* MainMenu.xib */,
@@ -93,6 +123,7 @@
 		27E60A2216773125000FD563 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27E60A3C167731F3000FD563 /* osceleton */,
 				27E60A2316773125000FD563 /* OsceletonWrapper-Info.plist */,
 				27E60A2416773125000FD563 /* InfoPlist.strings */,
 				27E60A2716773125000FD563 /* main.m */,
@@ -101,6 +132,16 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		27E60A3E1677326D000FD563 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27E60A3F1677326D000FD563 /* VVBasics.framework */,
+				27E60A401677326D000FD563 /* VVMIDI.framework */,
+				27E60A411677326D000FD563 /* VVOSC.framework */,
+			);
+			path = "External Frameworks";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -112,6 +153,7 @@
 				27E60A1316773125000FD563 /* Sources */,
 				27E60A1416773125000FD563 /* Frameworks */,
 				27E60A1516773125000FD563 /* Resources */,
+				27E60A491677328E000FD563 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -156,6 +198,7 @@
 				27E60A2616773125000FD563 /* InfoPlist.strings in Resources */,
 				27E60A2C16773125000FD563 /* Credits.rtf in Resources */,
 				27E60A3216773125000FD563 /* MainMenu.xib in Resources */,
+				27E60A3D167731F3000FD563 /* osceleton in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OsceletonWrapper/OsceletonWrapper-Prefix.pch";
 				INFOPLIST_FILE = "OsceletonWrapper/OsceletonWrapper-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -270,9 +318,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OsceletonWrapper/OsceletonWrapper-Prefix.pch";
 				INFOPLIST_FILE = "OsceletonWrapper/OsceletonWrapper-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
